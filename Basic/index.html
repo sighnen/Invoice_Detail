@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+<fieldset>
+  <legend class="header">McDonald's Delivery</legend>
+  </legend>
+
+  <fieldset>
+    <legend>Invoice Details</legend>
+
+  <form required><form required>
+    <label class="required" for="invoice">Invoice to:</label><br>
+    <input type="text" id="invoice" name="invoice" placeholder="Full Name" required></label><br>
+    <label class="required" for="contact">Contact #:</label><br>
+    <input type="text" id="contact" name="contact" maxlength="11" placeholder="Contact Number"></label>
+    <label class="required" for="datetoday">Date:</label>
+    <input type="date" id="datetoday" name="datetoday"></label>
+  </form>
+  </fieldset>
+  <table class="table2">
+
+    <caption class="title">Invoice Form</caption>
+
+    <tr class="head">
+
+      <th>Item Description</th>
+      <th>Qty</th>
+      <th>Unit Price</th>
+      <th>Amount</th>
+
+    </tr>
+
+    <tr class="b">
+      <td>
+        <textarea class="itmdsc" maxlength="100" align="center" name="itemdescription1" placeholder="Item Description 1"></textarea>
+      </td>
+      <td><input class="itmdsc" type="number" id="itmdsc" name="itemquantity1" align="center" placeholder="Item Quanity 1"></label></td>
+      <td>
+        <div class="currency-wrap">
+          <span class="currency-code">₱</span>
+          <input class="price" type="number" id="price" name="unitprice1" placeholder="Unit Price" step=".05">
+        </div>
+      </td>
+        <td>
+          <div class="currency-wrap">
+            <span class="currency-code">₱</span>
+            <input class="price" type="number" id="price" name="amount1" placeholder="Amount" step=".05">
+          </div>
+        </td>
+    </tr>
+
+    <tr class="b">
+      <td><textarea class="itmdsc" maxlength="100" align="center" name="itemdescription2" placeholder="Item Description 2"></textarea></td>
+      <td><input class="itmdsc" type="number" id="itmdsc" name="itemquantity2" align="center" placeholder="Item Quanity 2"></label></td>
+      <td>
+        <div class="currency-wrap">
+          <span class="currency-code">₱</span>
+          <input class="price" type="number" id="price" name="unitprice2" placeholder="Unit Price" step=.05">
+        </div>
+      </td>
+        <td>
+          <div class="currency-wrap">
+            <span class="currency-code">₱</span>
+            <input class="price" type="number" id="price" name="amount2" placeholder="Amount" step=".05">
+          </div>
+        </td>
+    </tr>
+
+    <tr class="b">
+      <td><textarea class="itmdsc" maxlength="100" align="center" name="itemdescription2" placeholder="Item Description 3"></textarea></td>
+      <td><input class="itmdsc" type="number" id="itmdsc" name="itemquantity3" align="center" placeholder="Item Quanity 3"></label></td>
+      <td>
+        <div class="currency-wrap">
+          <span class="currency-code">₱</span>
+          <input class="price" type="number" id="price" name="unitprice3" placeholder="Unit Price" step=".05">
+        </div>
+      </td>
+        <td>
+          <div class="currency-wrap">
+            <span class="currency-code">₱</span>
+            <input class="price" type="number" id="price" amount3="price" placeholder="Amount" step=".05">
+          </div>
+        </td>
+    </tr>
+
+    <tr class="b">
+      <td class="right-align" colspan="3">Subtotal</td>
+      <td>
+        <div class="currency-wrap">
+          <span class="currency-code">₱</span>
+          <input class="price" type="number" id="price" name="subtotal" placeholder="Subtotal" step=".05">
+        </div>
+      </td>
+    </tr>
+
+    <tr class="b">
+      <td class="vat-sales" colspan="3">VAT (12%)</td>
+      <td>
+        <div class="currency-wrap">
+          <span class="currency-code">₱</span>
+          <input class="price" type="number" id="price" name="vatprice" placeholder="VAT Price" step=".05">
+        </div>
+      </td>
+    </tr>
+
+    <tr class="b">
+      <td class="right-align" colspan="3">Total</td>
+      <td>
+        <div class="currency-wrap">
+          <span class="currency-code">₱</span>
+          <input class="price" type="number" id="price" name="totalamount" placeholder="Total Amount" step=".05">
+        </div>
+      </td>
+    </tr>
+
+  </table>
+  
+  <fieldset>
+    <legend>Additional Details</legend>
+  <form>
+    <label for="payment">Payment Method:</label><br>
+
+    <select name="payment" id="paymentmethod" required>
+      <option value="">-----Select Payment Method-----</option>
+      <option value="gcash">GCASH</option>
+      <option value="paymaya">PAYMAYA</option>
+      <option value="card">Debit/Credit Card</option>
+      <option value="cdo">Cash on Delivery</option>
+    </select>
+
+    <br>
+    <input type="radio" id="home" name="address" value="Home" required>
+    <label for="home">Home</label>
+    <input type="radio" id="work" name="address" value="work" required>
+    <label for="work">Work</label>
+    <br>
+    <textarea class="address" maxlength="500" placeholder="Type address details here" required></textarea>
+    <br>
+
+  
+  </fieldset>
+  <input type="submit" value="Submit" class="submit">
+  </form>
+</fieldset>
+</form>
+</body>
+</html>
